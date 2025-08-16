@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vanisri Lenka | Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #f1f5f9;
+        scroll-behavior: smooth;
+    }
+    header {
+        background-color: rgba(30, 41, 59, 0.95);
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(8px);
+    }
+    header h1 {
+        margin: 0;
+        color: #38bdf8;
+    }
+    nav a {
+        color: #f1f5f9;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    nav a:hover {
+        color: #38bdf8;
+    }
+    section {
+        padding: 60px 10%;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-in-out;
+    }
+    section.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .hero {
+        text-align: center;
+        padding: 100px 10% 60px;
+    }
+    .hero img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 4px solid #38bdf8;
+        box-shadow: 0 0 20px #38bdf8;
+    }
+    .hero h2 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    .typed-text {
+        color: #38bdf8;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .hero p {
+        max-width: 600px;
+        margin: auto;
+        color: #94a3b8;
+    }
+    .resume-btn {
+        background-color: #38bdf8;
+        color: #0f172a;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .resume-btn:hover {
+        background-color: #0ea5e9;
+        transform: scale(1.05);
+    }
+    .skills, .projects, .certifications {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    .card {
+        background-color: #1e293b;
+        padding: 20px;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 15px #38bdf8;
+    }
+    footer {
+        background-color: #1e293b;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #94a3b8;
+    }
+    footer a {
+        color: #38bdf8;
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Vanisri Lenka</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero show">
+    <img src="girl.jpg" alt="Lenka Vanisri">
+    <h2>Hello, I'm Vanisri</h2>
+    <p class="typed-text"></p>
+    <p>I’m a certified ServiceNow System Administrator and Application Developer who enjoys working with ITSM modules like Incident, Problem, Change, and Service Catalog. I’ve built custom applications using Flow Designer and Studio on the Now Platform.</p>
+    <a href="C:\Users\lenka\OneDrive\Desktop\Ressumes\Vanisri_Lenka_cognizant.pdf" download class="resume-btn">📄 Download Resume</a>
+</section>
+
+<section id="about" style="text-align:center; max-width:800px; margin:auto;">
+    <h2>About Me</h2>
+    <p style="font-size:1.1rem; line-height:1.6;">
+        Hi, I’m <strong style="color:#38bdf8;">Vanisri Lenka</strong> — a passionate 
+        <strong style="color:#38bdf8;">Certified ServiceNow Developer & Administrator</strong> 
+        with expertise in <span style="color:#38bdf8;">ITSM Modules</span> like Incident, Problem, Change, and Service Catalog.
+    </p>
+    <p style="font-size:1.1rem; line-height:1.6;">
+        I specialize in building <strong style="color:#38bdf8;">impactful digital solutions</strong> 
+        that improve workflows, automate processes, and enhance user experiences.  
+        My tech stack includes <strong>Python, Java, SQL, and JavaScript</strong> along with strong problem-solving skills.
+    </p>
+    <p style="font-size:1.1rem; line-height:1.6;">
+        I believe in <strong style="color:#38bdf8;">continuous learning</strong>, adaptability, 
+        and delivering high-quality results that make a real difference for organizations.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">Python</div>
+        <div class="card">SQL</div>
+        <div class="card">HTML</div>
+        <div class="card">Java</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Incident Management</div>
+        <div class="card">Change Management</div>
+        <div class="card">Problem Management</div>
+        <div class="card">Service Catalog</div>
+        <div class="card">Flow Designer</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Educational Management System</h3>
+            <p>Custom application in ServiceNow to manage student and teacher records, automate admissions, and monitor academic progress.</p>
+        </div>
+        <div class="card">
+            <h3>ServiceNow Laptop Request</h3>
+            <p>Automated laptop provisioning with Service Catalog, validations, and approval workflows.</p>
+        </div>
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>Showcasing resume and projects using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="card">
+            <h3>Weather App</h3>
+            <p>Fetched and displayed real-time weather data using Open API.</p>
+        </div>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+        <div class="card">ServiceNow Certified System Administrator (CSA)</div>
+        <div class="card">ServiceNow Certified Application Developer (CAD)</div>
+        <div class="card">Introduction to Java (Coursera)</div>
+        <div class="card">Introduction to OOP with Java (Coursera)</div>
+    </div>
+</section>
+
+<section id="contact" style="text-align:center;">
+    <h2>Let’s Connect</h2>
+    <p>
+        Whether you have a project, job opportunity, or just want to say hello, my inbox is always open.
+    </p>
+    <div style="margin-top:20px;">
+        <p>📧 <strong>Email:</strong> <a href="mailto:lenkavanisri44@gmail.com">lenkavanisri44@gmail.com</a></p>
+        <p>📱 <strong>Phone:</strong> <a href="tel:+917801097130">+91 78010 97130</a></p>
+        <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lenka-vanisri-82a37828a/" target="_blank">linkedin.com/in/lenka-vanisri</a></p>
+        <p>💻 <strong>GitHub:</strong> <a href="https://github.com/vanisri1213" target="_blank">github.com/vanisri1213</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Vanisri Lenka | Designed with ❤️
+</footer>
+
+<script>
+    // Typing Effect
+    const typedText = document.querySelector(".typed-text");
+    const roles = ["Certified ServiceNow Developer", "Certified System Administrator", "Full Stack Learner", "Problem Solver"];
+    let roleIndex = 0, charIndex = 0;
+    function typeEffect() {
+        if (charIndex < roles[roleIndex].length) {
+            typedText.textContent += roles[roleIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeEffect, 100);
+        } else {
+            setTimeout(eraseEffect, 1500);
+        }
+    }
+    function eraseEffect() {
+        if (charIndex > 0) {
+            typedText.textContent = roles[roleIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(eraseEffect, 50);
+        } else {
+            roleIndex = (roleIndex + 1) % roles.length;
+            setTimeout(typeEffect, 300);
+        }
+    }
+    typeEffect();
+
+    // Scroll Animation
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+        const triggerBottom = window.innerHeight * 0.85;
+        sections.forEach(sec => {
+            const secTop = sec.getBoundingClientRect().top;
+            if (secTop < triggerBottom) {
+                sec.classList.add("show");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
